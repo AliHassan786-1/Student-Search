@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Search</title>
+</head>
+<body>
+
+    <script>
+        // 1. Create an array of 10 student names
+        var students = ["Ali", "Ahmad", "Sara", "Zain", "Fatima", "Bilal", "Ayesha", "Hamza", "Hassan", "Maryam"];
+
+        // Ask the user to enter a name to search
+        var searchName = prompt("Enter a student name to search:");
+
+        // Create a flag variable set to false initially
+        var found = false;
+
+        // 2. Search the array using a for loop
+        for (var i = 0; i < students.length; i++) {
+            // Check if the current element matches the search name
+            if (students[i] === searchName) {
+                found = true; // Turn flag to true
+                break;        // Exit the loop immediately since we found it
+            }
+        }
+
+        // 3 & 4. Display the result based on the flag status
+        if (found) {
+            alert("Student Found");
+        } else {
+            alert("Student Not Found");
+        }
+    </script>
+
+</body>
+</html>
